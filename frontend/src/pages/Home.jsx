@@ -4,7 +4,8 @@ import NoteForm from "../components/NoteForm";
 import NoteCard from "../components/NoteCard";
 import Toast from "../components/Toast";
 
-const API_URL = "/api/notes";
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API_URL = `${API_BASE}/api/notes`;
 
 // Toast hook
 function useToast() {

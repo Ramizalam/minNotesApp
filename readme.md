@@ -177,7 +177,21 @@ cd frontend
 
 # Install dependencies
 npm install
+```
 
+#### Configure Frontend Environment Variables
+
+Create a `frontend/.env` file and set your backend API URL. For local development:
+
+```env
+VITE_API_URL=http://localhost:5000
+```
+
+> **Note:** If deploying to production, replace this with your deployed backend URL.
+
+#### Start the Frontend Server
+
+```bash
 # Start the dev server
 npm run dev
 ```
